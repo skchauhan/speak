@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "TextReader",
+    "description": "Text Reader",
+    "version": "1.0",
+    "icons": {
+        "16": "speak.png",
+        "48": "speak.png",
+        "128": "speak.png"
+    },
+    "page_action": {        
+        "default_icon": "speak.png",
+        "default_popup": "popup.html",
+        "default_title": "Google Mail"
+    },
+    "content_scripts": [
+        { 
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["jquery.js", "app.js"],
+            "css":["main.css"] 
+        }
+    ]
+}
